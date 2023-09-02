@@ -19,7 +19,7 @@ public class CydeoApp {
         Microservice microservice = context.getBean(Microservice.class);
         microservice.getTotalHours();
 
-        DevOps devOps = context.getBean(DevOps.class);
-        devOps.getTotalHours();
+//        DevOps devOps = context.getBean(DevOps.class);
+//        devOps.getTotalHours();
     }
 }
