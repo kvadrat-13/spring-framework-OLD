@@ -8,8 +8,10 @@ public class CydeoApp {
 
         ApplicationContext ap = new AnnotationConfigApplicationContext(ConfigCourse.class);
 
-        Agile agile = ap.getBean(Agile.class);
-        agile.getTeachingHours();
+        ap.getBean(Agile.class).getTeachingHours();
+        ap.getBean(Java.class).getTeachingHours();
+//        ap.getBean(Selenium.class).getTeachingHours();// through an exception because there is no @Component annotation in Selenium class
+
 
     }
 }
